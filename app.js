@@ -2,9 +2,9 @@ width = window.innerWidth
 height = window.innerHeight
 
 document.addEventListener('mousemove', function(e) {
-    r = normalize(e.pageX, width);
-    b = normalize(e.pageY, height);
-    document.body.style.backgroundColor = `rgb(${r}, 0, ${b})`;
+    b = normalize(e.pageX, width);
+    g = normalize(e.pageY, height);
+    document.body.style.backgroundColor = `rgb(0, ${g}, ${b})`;
 })
 
 function normalize(n, bound) {
